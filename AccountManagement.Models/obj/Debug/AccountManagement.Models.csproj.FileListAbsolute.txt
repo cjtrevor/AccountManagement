@@ -1,0 +1,6 @@
+C:\Freelance\Repos\BlueHarvest\AccountManagement.Models\bin\Debug\AccountManagement.Models.dll
+C:\Freelance\Repos\BlueHarvest\AccountManagement.Models\bin\Debug\AccountManagement.Models.pdb
+C:\Freelance\Repos\BlueHarvest\AccountManagement.Models\obj\Debug\AccountManagement.Models.csproj.CoreCompileInputs.cache
+C:\Freelance\Repos\BlueHarvest\AccountManagement.Models\obj\Debug\AccountManagement.Models.dll
+C:\Freelance\Repos\BlueHarvest\AccountManagement.Models\obj\Debug\AccountManagement.Models.pdb
+C:\Freelance\Repos\BlueHarvest\AccountManagement.Models\obj\Debug\AccountManagement.Models.csprojAssemblyReference.cache

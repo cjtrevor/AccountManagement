@@ -1,0 +1,13 @@
+﻿@model  AccountManagement.UI.ViewModels.Management_Index_VM
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Customers</h2>
+@using (Html.BeginForm("Accounts", "Management", new { CustomerID = Model.CustomerID }, FormMethod.Post, new { Class = "form-inline" }))
+{
+    @Html.DropDownListFor(x => x.CustomerID, Model.AllCustomers, new { Class = "form-control" })
+    <button class="form-control">Manage</button>
+}
+
+

@@ -1,0 +1,30 @@
+﻿@model AccountManagement.UI.ViewModels.Management_Accounts_VM
+@{
+    ViewBag.Title = "Accounts";
+}
+
+<h2>Accounts</h2>
+<h4>Customer: @Model.CustomerName</h4>
+@using (Html.BeginForm("NewAccount", "Management", new { CustomerID = Model.customerID, StartingBalance = Model.StartingBalance }, FormMethod.Post, new { id = "NewAccountForm", Class = "form-inline" }))
+{
+    @Html.TextBoxFor(x => x.StartingBalance, new { Class = "form-control ", placeholder = "Starting Balance", type = "number", step="0.01"})
+    <button id="btnCreate" class="form-control">Add new account</button>
+}
+<br />
+<table class="table table-condensed col-sm-4">
+    <tr>
+        <th class="col-sm-3">Account Number</th>
+        <th class="col-sm-3">Account Balance</th>
+        <th class="col-sm-1"></th>
+    </tr>
+    @foreach (var acc in Model.Accounts)
+    {
+        <tr>
+            <td>@acc.AccountNumber</td>
+            <td>@acc.Balance</td>
+            <td><span class="glyphicon glyphicon-list"></span>&nbsp; @Html.ActionLink("Transactions","Transactions","Management", new { AccountID = acc.AccountID, AccountNumber = acc.AccountNumber },null)</td>
+        </tr>
+    }
+</table>
+
+
